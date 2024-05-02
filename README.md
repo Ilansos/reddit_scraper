@@ -21,13 +21,24 @@ Ensure the following software packages and libraries are installed:
         langdetect
         pymongo
 
-### You can install these packages with:
+## Setup Instructions
+
+### 1. Clone the Repository
+
+First, clone this repository to your local machine using git:
+
+```bash
+git clone https://github.com/Ilansos/telegram_channel_scraper.git
+cd <repository-directory>
+```
+
+### 2. Install Python Dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Install Translation Languages
+### 3. Install Translation Languages
 
 Run the translator_install.py script to install the necessary languages for the translation library:
 
@@ -38,9 +49,7 @@ python translator_install.py
 This script downloads and installs translation packages needed to convert content to English from various languages.
 
 
-## Setup Instructions
-
-### 1. Obtain Reddit API credentials:
+### 4. Obtain Reddit API credentials:
 
 Create a Reddit account if you don't have one.
 Go to Reddit Apps and log in.
@@ -52,11 +61,11 @@ Fill out the form:
     Description: Optional description.
 Submit the form, and note down the generated Client ID and Client Secret.
 
-### 2. Configure MongoDB:
+### 5. Configure MongoDB:
 
 Ensure that MongoDB is installed and running on your system. By default, the scraper connects to MongoDB at mongodb://localhost:27017/. If your MongoDB setup differs, adjust the connection string that is located on the config.json file on the root directory of the project.
 
-### 3. Configure the Scraper
+### 6. Configure the Scraper
 
 Modify the config.json file that is located in the root directory the project with the following configuration parameters:
 
@@ -73,7 +82,7 @@ Modify the config.json file that is located in the root directory the project wi
 
 Replace the placeholders with the appropriate values.
 
-### 4. Keywords file:
+### 7. Keywords file:
 
 Modify the keywords.txt file in the root directory.
 

@@ -28,7 +28,7 @@ Ensure the following software packages and libraries are installed:
 First, clone this repository to your local machine using git:
 
 ```bash
-git clone https://github.com/Ilansos/reddit_scraper
+git clone https://github.com/Ilansos/reddit_scraper.git
 cd <repository-directory>
 ```
 
